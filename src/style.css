@@ -1,0 +1,66 @@
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px 0; /* Virgül yerine boşluk olmalı */
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#searchInput {
+  width: 75%;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 10px; /* Giriş kutusu ile buton arasında boşluk */
+}
+
+.button-wrapper {
+  display: flex;
+  gap: 10px; /* Butonlar arasına boşluk */
+  margin-top: 10px;
+}
+
+#searchButton,
+#clearButton {
+  width: 110px;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  background-color: #464545;
+  color: #f9e9e9;
+  box-shadow: 1px 3px 5px #342f2f;
+  cursor: pointer; /* Butonlara fare ile tıklanabilir izlenimi verir */
+}
+
+#searchButton:hover,
+#clearButton:hover {
+  background-color: #333333; /* Butonlara hover efekti */
+}
+
+.imagelist-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; /* Görsellerin ortalanmasını sağlar */
+  margin-top: 20px;
+}
+
+.imagelist-wrapper > .card {
+  margin: 20px;
+  border: 1px solid #7e7474;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 3px 5px 8px #645f5f;
+  background-color: #ffffff; /* Arkaplanı beyaz yaparak görsellerin daha net görünmesini sağlar */
+}
+
+.card img {
+  max-width: 100%; /* Resimlerin div'e sığması için */
+  height: auto; /* Orantılı bir şekilde resmin boyutlandırılmasını sağlar */
+  border-radius: 5px; /* Resmin köşelerini yuvarlatır */
+}
