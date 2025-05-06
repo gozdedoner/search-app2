@@ -64,3 +64,28 @@
   height: auto; /* Orantılı bir şekilde resmin boyutlandırılmasını sağlar */
   border-radius: 5px; /* Resmin köşelerini yuvarlatır */
 }
+
+
+@media (max-width: 768px) {
+  #searchInput {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .button-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #searchButton,
+  #clearButton {
+    width: 90%;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .imagelist-wrapper > .card {
+    width: 90%;
+    margin: 15px auto;
+  }
+}
